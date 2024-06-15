@@ -20,8 +20,11 @@ Output: ""
 */
 
 /*
+
 time complexity: O(n)
+
 space complexity: O(n)
+
 */
 class Solution {
 public:
@@ -33,3 +36,10 @@ public:
         return str1.substr(0, gcd(str1.size(), str2.size()));
     }
 };
+
+auto init = [](){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 'c';
+}();
