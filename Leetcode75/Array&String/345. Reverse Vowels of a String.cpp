@@ -27,7 +27,7 @@ space complexity: O(1)
 class Solution {
 public:
     string reverseVowels(string s) {
-        int tail = s.size();
+        int tail = s.size()-1;
         int head = 0;
         unordered_set<char> vowel{'a','e','i','o','u','A','E','I','O','U'};
         while(tail>head){
@@ -38,7 +38,7 @@ public:
             }
             else{
                 if(!vowel.count(s[head])){
-                  head++;
+                    head++;
                 }
                 if(!vowel.count(s[tail])){
                     tail--;
